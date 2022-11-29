@@ -56,8 +56,9 @@ namespace ResponsiJuniorProject
         private void btnEdit_Click(object sender, EventArgs e)
         {
             string nama = tbNamaKaryawan.Text;
+            int depID = Int32.Parse(tbDepartemenID.Text);
 
-            db.UpdateData(currKaryawanID, nama, currDepID);
+            db.UpdateData(currKaryawanID, nama, depID);
             LoadData();
         }
 
